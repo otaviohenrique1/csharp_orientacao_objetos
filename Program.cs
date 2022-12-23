@@ -1,12 +1,9 @@
-﻿using System;
+﻿using bytebank;
 
-namespace csharp_orientacao_objetos
+class Program
 {
-  class Program
+  static void Main(string[] args)
   {
-    static void Main(string[] args)
-    {
-      // 
-    }
+    ContaCorrente contaCorrente = new ContaCorrente();
   }
 }
