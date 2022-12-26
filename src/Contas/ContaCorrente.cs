@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using bytebank.Titular;
 
-namespace bytebank
+namespace bytebank.Contas
 {
   public class ContaCorrente
   {
     private int numero_agencia = 0;
     private string conta = "";
-    private string titular = "";
+    private Cliente titular = new Cliente();
     private double saldo = 100;
 
     public void Depositar(double valor)
@@ -63,7 +64,7 @@ namespace bytebank
       this.conta = conta;
     }
 
-    public void setTitular(string titular)
+    public void setTitular(Cliente titular)
     {
       this.titular = titular;
     }
@@ -78,7 +79,7 @@ namespace bytebank
       return this.conta;
     }
 
-    public string getTitular()
+    public Cliente getTitular()
     {
       return this.titular;
     }
