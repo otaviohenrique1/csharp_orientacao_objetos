@@ -16,6 +16,10 @@ namespace bytebank.Contas
 
     public void Depositar(double valor)
     {
+      if (valor < 0)
+      {
+        return;
+      }
       this.saldo += valor;
     }
 
@@ -26,13 +30,18 @@ namespace bytebank.Contas
         this.saldo -= valor;
         return true;
       }
-      else { 
+      else
+      {
         return false;
       }
     }
 
     public void setSaldo(double saldo)
     {
+      if (saldo < 0)
+      {
+        return;
+      }
       this.saldo = saldo;
     }
 
@@ -47,13 +56,14 @@ namespace bytebank.Contas
       {
         return false;
       }
-      else { 
+      else
+      {
         this.saldo -= valor;
         destino.saldo += valor;
         return true;
       }
     }
-    
+
     public void setNumeroAgencia(int numero_agencia)
     {
       this.numero_agencia = numero_agencia;

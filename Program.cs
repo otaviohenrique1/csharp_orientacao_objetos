@@ -48,24 +48,34 @@ class Program
 
     ContaCorrente contaDaMaria = new ContaCorrente();
     Cliente maria = new Cliente();
-
     maria.setNome("Maria Souza");
     maria.setCpf("3216549870");
     maria.setProfissao("Advogada");
-
     contaDaMaria.setTitular(maria);
     contaDaMaria.setNumeroAgencia(17);
     contaDaMaria.setConta("1010-X");
     contaDaMaria.setSaldo(350);
-
-    Console.WriteLine(maria.getNome());
-    Console.WriteLine(maria.getCpf());
-    Console.WriteLine(maria.getProfissao());
-    Console.WriteLine(contaDaMaria.getTitular().getNome());
-    Console.WriteLine(contaDaMaria.getTitular().getCpf());
-    Console.WriteLine(contaDaMaria.getTitular().getProfissao());
-    Console.WriteLine(contaDaMaria.getNumeroAgencia());
-    Console.WriteLine(contaDaMaria.getConta());
     Console.WriteLine(contaDaMaria.getSaldo());
+
+    ContaCorrente contaDoAndre = new ContaCorrente();
+    Cliente andre = new Cliente();
+    andre.setNome("André Silva");
+    andre.setCpf("0987654321");
+    andre.setProfissao("Analista");
+    contaDoAndre.setTitular(andre);
+    contaDoAndre.setNumeroAgencia(18);
+    contaDoAndre.setConta("1010-N");
+    contaDoAndre.setSaldo(350);
+    Console.WriteLine(contaDoAndre.getSaldo());
+
+    // Console.WriteLine(maria.getNome());
+    // Console.WriteLine(maria.getCpf());
+    // Console.WriteLine(maria.getProfissao());
+    // Console.WriteLine(contaDaMaria.getTitular().getNome());
+    // Console.WriteLine(contaDaMaria.getTitular().getCpf());
+    // Console.WriteLine(contaDaMaria.getTitular().getProfissao());
+    // Console.WriteLine(contaDaMaria.getNumeroAgencia());
+    // Console.WriteLine(contaDaMaria.getConta());
+    // Console.WriteLine(contaDaMaria.getSaldo());
   }
 }
