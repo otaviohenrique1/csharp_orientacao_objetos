@@ -102,5 +102,12 @@ namespace bytebank.Contas
     // {
     //   return this.titular;
     // }
+
+    public ContaCorrente(double saldo, string Conta/* , int Numero_Agencia, Cliente Titular */) {
+      this.saldo = saldo;
+      this.Conta = Conta;
+      // this.numero_agencia = Numero_Agencia;
+      // this.Titular = Titular;
+    }
   }
 }

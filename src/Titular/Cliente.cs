@@ -12,6 +12,8 @@ namespace bytebank.Titular
     public string Cpf { get; set; }
     public string Profissao { get; set; }
 
+    // public Cliente(string Nome, string Cpf, string Profissao) {}
+
     // private string nome = "";
     // private string cpf = "";
     // private string profissao = "";
