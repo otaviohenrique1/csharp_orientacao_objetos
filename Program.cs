@@ -79,11 +79,15 @@ class Program
     // Console.WriteLine(contaDaMaria.getConta());
     // Console.WriteLine(contaDaMaria.getSaldo());
 
-    ContaCorrente contaCorrente4 = new ContaCorrente(18, "1010-X");
-    contaCorrente4.setSaldo(500);
-    contaCorrente4.Numero_Agencia = 18;
-    contaCorrente4.Titular = new Cliente();
-    Console.WriteLine(contaCorrente4.getSaldo());
-    Console.WriteLine(contaCorrente4.Numero_Agencia);
+    // ContaCorrente contaCorrente4 = new ContaCorrente(18, "1010-X");
+    // contaCorrente4.setSaldo(500);
+    // contaCorrente4.Titular = new Cliente();
+    // Console.WriteLine(contaCorrente4.getSaldo());
+    // Console.WriteLine(contaCorrente4.Numero_Agencia);
+
+    ContaCorrente conta5 = new ContaCorrente(283, "1234-X");
+    Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+    ContaCorrente conta6 = new ContaCorrente(284, "9874-Z");
+    Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
   }
 }
