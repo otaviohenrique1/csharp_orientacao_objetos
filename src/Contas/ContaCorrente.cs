@@ -9,10 +9,29 @@ namespace bytebank.Contas
 {
   public class ContaCorrente
   {
-    private int numero_agencia = 0;
-    private string conta = "";
-    private Cliente titular = new Cliente();
+    private int numero_agencia;
+    public int Numero_Agencia
+    {
+      get { return this.numero_agencia; }
+      set
+      {
+        if (value > 0)
+        {
+          this.numero_agencia = value;
+        }
+      }
+    }
+
+    /* Propriedades autoimplementadas */
+    // private string conta = "";
+    public string Conta { get; set; }
+
+    // private Cliente titular = new Cliente();
+
+    public Cliente Titular { get; set; }
+
     private double saldo = 100;
+
 
     public void Depositar(double valor)
     {
@@ -64,34 +83,24 @@ namespace bytebank.Contas
       }
     }
 
-    public void setNumeroAgencia(int numero_agencia)
-    {
-      this.numero_agencia = numero_agencia;
-    }
+    // public void setConta(string conta)
+    // {
+    //   this.conta = conta;
+    // }
 
-    public void setConta(string conta)
-    {
-      this.conta = conta;
-    }
+    // public void setTitular(Cliente titular)
+    // {
+    //   this.titular = titular;
+    // }
 
-    public void setTitular(Cliente titular)
-    {
-      this.titular = titular;
-    }
+    // public string getConta()
+    // {
+    //   return this.conta;
+    // }
 
-    public int getNumeroAgencia()
-    {
-      return this.numero_agencia;
-    }
-
-    public string getConta()
-    {
-      return this.conta;
-    }
-
-    public Cliente getTitular()
-    {
-      return this.titular;
-    }
+    // public Cliente getTitular()
+    // {
+    //   return this.titular;
+    // }
   }
 }
